@@ -25,4 +25,13 @@ import { Component } from '@angular/core';
     ),
   ],
 })
-export class OpenCloseComponent {}
+export class OpenCloseComponent {
+
+  isOpen = true;
+
+  toggle(){
+    this.isOpen= !this.isOpen;
+  }
+
+
+}
