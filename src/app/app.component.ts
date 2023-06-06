@@ -16,4 +16,11 @@ import {
 })
 export class AppComponent {
   title = 'angular-animations';
+  isShow = true;
+
+  showHide(){
+    this.isShow=!this.isShow;
+  }
+
+
 }
