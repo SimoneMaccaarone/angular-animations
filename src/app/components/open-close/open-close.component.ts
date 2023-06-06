@@ -1,4 +1,4 @@
-import { state, style } from '@angular/animations';
+import { animate, state, style, transition } from '@angular/animations';
 import { Component } from '@angular/core';
 
 @Component({
@@ -18,6 +18,12 @@ import { Component } from '@angular/core';
       backgroundColor: 'blue'
     })
     ),
+    transition('open => closed',[
+      animate('1s')
+    ]),
+    transition('closed => open', [
+      animate('0.5s')
+    ]),
   ]
 })
 export class OpenCloseComponent {
