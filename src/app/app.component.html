@@ -1,2 +1,2 @@
 <button (click)="showHide()">hide/show</button>
-<app-open-close></app-open-close>
+<app-open-close class="openClassComponent" [@showHide]="isShow?'show':'hide'"></app-open-close>

@@ -15,14 +15,17 @@ import {
   animations: [
     trigger('showHide', [
       state('show', style({
-        position: 'absolete',
+        position: 'absolute',
         top: '500px',
-        left: '500px'
+        left: '500px',
+        opacity:1
       })),
       state('hide', style({
-        position: 'absolete',
-        top: '500px',
-        left: '0'
+        position: 'absolute',
+        top: '-300px',
+        left: '0',
+        opacity:0
+
       })),
       transition('show => hide', [animate('1s')]),
       transition('hide => show', [animate('1s')]),
